@@ -1,0 +1,27 @@
+:root{
+    --dark-blue: #13293D;
+    --blue: #006494;
+    --light-blue: #2970CA;
+    --white: #E8F1F2;
+    --black: #2F2D2E;
+    font-family: 'Lexend Deca', sans-serif;
+    --light-font: 100;
+    --medium-font: 400;
+    --bold-font: 700;
+}
+
+#header {
+    color: var(--dark-blue);
+}
+
+.logo-img {
+    width: 80px
+}
+
+main {
+    margin-top: 100px;
+}
+
+.title-h1, .title-p{
+    color: var(--dark-blue);
+}
