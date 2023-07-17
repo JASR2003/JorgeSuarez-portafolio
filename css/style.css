@@ -4,10 +4,13 @@
     --light-blue: #2970CA;
     --white: #E8F1F2;
     --black: #2F2D2E;
-    font-family: 'Lexend Deca', sans-serif;
     --light-font: 100;
     --medium-font: 400;
     --bold-font: 700;
+}
+
+*{
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 #header {
@@ -22,6 +25,15 @@ main {
     margin-top: 100px;
 }
 
-.title-h1, .title-p{
+.text-bg-white{
     color: var(--dark-blue);
+}
+
+.info-personal-2{
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.card-conocimiento {
+    max-height: 575px;
 }
