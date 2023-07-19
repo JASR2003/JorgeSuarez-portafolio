@@ -29,7 +29,7 @@ main {
     color: var(--dark-blue);
 }
 
-.info-personal-2{
+.info-personal-2, .ejemplos-paginas{
     color: var(--white);
     background-color: var(--blue);
 }
