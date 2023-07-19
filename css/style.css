@@ -37,3 +37,7 @@ main {
 .card-conocimiento {
     max-height: 575px;
 }
+
+.img-change{
+    height: 200px !important;
+}
