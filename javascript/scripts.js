@@ -19,7 +19,7 @@ cardsPaginasContenido.push({
 cardsPaginasContenido.push({
     image: './imgs/png/bootstrapPlatzi.jpeg',
     imageAlt: 'img bootstrap Platzi',
-    title: 'HawaiiConf Platzi',
+    title: 'PlatziConf Hawaii',
     text: 'Página de ejemplo de platzi para aprender como es el uso de Bootstrap a la hora de escribir código',
     link: 'https://jasr2003.github.io/bootstrap-platzi/',
 })
