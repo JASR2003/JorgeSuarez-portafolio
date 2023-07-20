@@ -92,6 +92,36 @@ cardsCursosContenido.push({
     link: "https://platzi.com/cursos/bootstrap/"
 })
 
+cardsCursosContenido.push({
+    title: "Curso de JAVASCRIPT desde CERO - Nivel JUNIOR",
+    text: "10 horas de contenido referente a JavaScript dividido en 6 capitulos aprendiendo cosas como: Introducción de JavaScript, Arrays y Objetos, Bucles e iteraciones, POO, Math, Uso de la consola, DOM, entre otras cosas",
+    link: "https://www.youtube.com/watch?v=z95mZVUcJ-E&t=29282s"
+})
+
+cardsCursosContenido.push({
+    title: "Curso Básico de JavaScript",
+    text: "Conoce los conceptos clave del lenguaje de programación que se está comiendo al mundo. Aprende qué es una variable, una función, un objeto y dónde se guardan esos valores. Descubre qué es Scope y cómo se utilizan los loops. Obtén las herramientas para saber cómo tomar decisiones y validar acciones.",
+    link: "https://platzi.com/cursos/basico-javascript/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso Práctico de JavaScript",
+    text: "Aprender un lenguaje de programación requiere de práctica constante, con JavaScript puedes crear proyectos increíbles que logren resolver problemas de la vida real por medio de aplicaciones web.",
+    link: "https://platzi.com/cursos/javascript-practico/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso de Closures y Scope en JavaScript",
+    text: "Comprende a la perfección los diferentes alcances que tienen tus variables cuando son declaradas en JavaScript. En este curso aprenderás los conceptos fundamentales de Scope global y local, cómo declarar variables con const, let y var. Con ejercicios prácticos domina el uso de Closures en tus desarrollos.",
+    link: "https://platzi.com/cursos/javascript-closures-scope/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso de ECMAScript: Historia y Versiones de JavaScript",
+    text: "JavaScript es el lenguaje más utilizado para desarrollo de aplicaciones web, principalmente en el frontend. Cada año, ECMA International publica una nueva edición de ECMAScript, la especificación a la cual se ajusta JavaScript. Aprende las nuevas características que implementa ECMAScript desde la versión ES6 hasta la versión ES13.",
+    link: "https://platzi.com/cursos/ecmascript-6/"
+})
+
 
 function renderCardsPaginas(array){
    for (pages of array) {
