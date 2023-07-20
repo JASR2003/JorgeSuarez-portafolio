@@ -29,11 +29,20 @@ main {
     color: var(--dark-blue);
 }
 
-.info-personal-2, .ejemplos-paginas{
+.info-personal-2, .ejemplos-paginas, footer{
     color: var(--white);
     background-color: var(--blue);
 }
 
 .img-change{
     height: 200px !important;
+}
+
+.icon-footer{
+    width: 50%;
+    transition: 300ms;
+}
+
+.icon-footer:hover{
+    transform: scale(1.5);
 }
