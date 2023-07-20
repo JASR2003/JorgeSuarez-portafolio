@@ -50,6 +50,24 @@ cardsCursosContenido.push({
     link: "https://platzi.com/cursos/frontend-developer-practico/"
 })
 
+cardsCursosContenido.push({
+    title: "Curso de Responsive Design: Maquetación Mobile First",
+    text: "El 50% del tráfico en internet se realiza desde dispositivos móviles, convirtiendo una prioridad el desarrollar frontend para smartphones, tablets y laptops.",
+    link: "https://platzi.com/cursos/mobile-first/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso Práctico de Maquetación en CSS",
+    text: "La intención del curso es reforzar tus conocimientos en maquetación de HTML 5 semántico mientras creas un espacio para promocionar tu trabajo profesional.",
+    link: "https://platzi.com/cursos/practico-css/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso de CSS Grid Básico",
+    text: "¡Aprende a crear layouts dinámicos con CSS Grid! Aplica diseños complejos en tu sitio web con pocas líneas de código CSS. Construye grillas para distribuir tus contenedores y elementos HTML ágilmente.",
+    link: "https://platzi.com/cursos/css-grid/"
+})
+
 
 function renderCardsPaginas(array){
    for (pages of array) {
