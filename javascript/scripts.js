@@ -68,6 +68,30 @@ cardsCursosContenido.push({
     link: "https://platzi.com/cursos/css-grid/"
 })
 
+cardsCursosContenido.push({
+    title: "Curso Profesional de CSS Grid Layout",
+    text: "Aprende CSS Grid Layout para maquetar sitios web complejos sin complicaciones. Analiza tus diseños, divide tu aplicación en cuadrículas y conviértelas en estilos CSS. Integra CSS Grid con Flexbox y el modelo de caja para alinear tus elementos exactamente donde deben estar.",
+    link: "https://platzi.com/cursos/css-grid-layout/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso de Diseño Web con CSS Grid y Flexbox",
+    text: "Domina Flexbox y CSS Grid para construir diseños web de nivel superior. Familiarízate con los términos, herramientas, flujos de trabajo y tendencias de diseño más importantes del desarrollo frontend profesional.",
+    link: "https://platzi.com/cursos/flexbox-css-grid/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso de Diseño Web con CSS Grid y Flexbox",
+    text: "Domina Flexbox y CSS Grid para construir diseños web de nivel superior. Familiarízate con los términos, herramientas, flujos de trabajo y tendencias de diseño más importantes del desarrollo frontend profesional.",
+    link: "https://platzi.com/cursos/flexbox-css-grid/"
+})
+
+cardsCursosContenido.push({
+    title: "Curso de Bootstrap 4",
+    text: "Crear un sitio web responsivo que se vea bien en cualquier dispositivo, desde computadoras de escritorio hasta teléfonos inteligentes y tabletas utilizando Bootstrap",
+    link: "https://platzi.com/cursos/bootstrap/"
+})
+
 
 function renderCardsPaginas(array){
    for (pages of array) {
@@ -111,7 +135,7 @@ function renderCardsPaginas(array){
 function renderCardsCursos(array){
    for (courses of array) {
         const cardContainer = document.createElement('div');
-        cardContainer.classList.add('card','my-4');
+        cardContainer.classList.add('card','my-5');
 
         const cardTitle = document.createElement('div');
         cardTitle.classList.add('card-header','fs-4','text-uppercase','fw-bold','text-bg-white');
