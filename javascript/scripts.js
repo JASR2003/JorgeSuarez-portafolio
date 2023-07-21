@@ -179,7 +179,7 @@ function renderCardsCursos(array){
         cardText.innerText = courses.text;
 
         const cardLink = document.createElement('a');
-        cardLink.classList.add('btn','btn-primary');
+        cardLink.classList.add('btn','btn-primary','disabled');
         cardLink.setAttribute('target', '_blank');
         cardLink.setAttribute('href', courses.link);
         cardLink.innerText = "accede al curso";
