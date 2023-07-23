@@ -1,6 +1,7 @@
 const cardsPaginas = document.querySelector("#cards-paginas");
 const cardsCursos = document.querySelector("#cards-cursos");
 const modalCursos = document.querySelector("#exampleModal");
+const modalBtn = document.querySelector("#modalBtn");
 
 const myModal = document.getElementById('myModal');
 const myInput = document.getElementById('myInput');
@@ -185,13 +186,6 @@ function renderCardsCursos(array){
         cardText.classList.add('card-text','fs-6','fw-normal','text-bg-white');
         cardText.innerText = courses.text;
 
-        const cardLinkModal = document.createElement('button');
-        cardLinkModal.setAttribute('type', 'button');
-        cardLinkModal.setAttribute('data-bs-toggle', 'modal');
-        cardLinkModal.setAttribute('data-bs-target', '#exampleModal');
-        cardLinkModal.classList.add('btn','btn-primary','my-1')
-        cardLinkModal.innerText = "CERTIFICADO";
-
         const modalDialog = document.createElement('div');
         modalDialog.classList.add('modal-dialog','modal-lg','modal-dialog-centered');
 
@@ -208,13 +202,13 @@ function renderCardsCursos(array){
         image.setAttribute('src', courses.image)
         image.setAttribute('alt', courses.imageAlt)
 
-        modalContent.append(buttonClose, image);
+        modalContent.append(image, buttonClose);
 
         modalDialog.append(modalContent);
 
         modalCursos.append(modalDialog);
 
-        cardInfoDiv.append(cardText, cardLinkModal);
+        cardInfoDiv.append(cardText);
 
         cardContainer.append(cardTitle, cardInfoDiv);
 
