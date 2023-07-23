@@ -1,5 +1,9 @@
 const cardsPaginas = document.querySelector("#cards-paginas");
 const cardsCursos = document.querySelector("#cards-cursos");
+const modalCursos = document.querySelector("#exampleModal");
+
+const myModal = document.getElementById('myModal');
+const myInput = document.getElementById('myInput');
 
 const cardsPaginasContenido = [];
 const cardsCursosContenido = [];
@@ -29,97 +33,100 @@ cardsPaginasContenido.push({
 cardsCursosContenido.push({
     title: "Curso Definitivo de HTML y CSS",
     text: "Aprende HTML y CSS desde cero, sin conocimientos previos. Conoce todo sobre etiquetas HTML, semántica, CSS, como dar estilos a los elementos de tu sitio web, medidas EM/REM, modelo de caja y mucho más. Aprenderás todo lo que necesitas para empezar en el desarrollo web online y a construir sitios para internet de manera eficiente.",
-    link: "https://platzi.com/cursos/html-css/"
+    image:"./imgs/png/certificados/diploma-html-css-1.png",
+    imageAlt:"diploma html css"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de HTML y CSS",
     text: "¡Desarrolla un clon de Google con HTML y CSS! Pon en práctica todo lo que sabes de posicionamiento, modelo de cajas, tipos de display, selectores, flexbox y CSS Grid junto a Diego De Granda.",
-    link: "https://platzi.com/cursos/html-practico/"
+    image:"./imgs/png/certificados/diploma-html-practico-1.png",
+    imageAlt:"diploma html css practico"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Frontend Developer",
     text: "Domina las bases de HTML y CSS. Conoce la anatomía de un documento HTML, sus elementos y las propiedades de CSS. Maqueta las pantallas principales de tu página web con responsive design.",
-    link: "https://platzi.com/cursos/frontend-developer/"
+    link: "https://platzi.com/cursos/frontend-developer/",
+    image:"./imgs/png/certificados/diploma-frontend-developer-1.png",
+    imageAlt:"diploma frontend developer"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de Frontend Developer",
     text: "¡Aprende desarrollo frontend con responsive design! Pon en práctica todo lo que sabes sobre maquetación con HTML y CSS para construir las páginas y componentes de un e-commerce profesional.",
-    link: "https://platzi.com/cursos/frontend-developer-practico/"
+    image:"./imgs/png/certificados/diploma-frontend-developer-practico-1.png",
+    imageAlt:"diploma frontend developer curso practico"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Responsive Design: Maquetación Mobile First",
     text: "El 50% del tráfico en internet se realiza desde dispositivos móviles, convirtiendo una prioridad el desarrollar frontend para smartphones, tablets y laptops.",
-    link: "https://platzi.com/cursos/mobile-first/"
+    image:"./imgs/png/certificados/diploma-mobile-first-1.png",
+    imageAlt:"diploma mobile first"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de Maquetación en CSS",
     text: "La intención del curso es reforzar tus conocimientos en maquetación de HTML 5 semántico mientras creas un espacio para promocionar tu trabajo profesional.",
-    link: "https://platzi.com/cursos/practico-css/"
+    image:"./imgs/png/certificados/diploma-practico-css-1.png",
+    imageAlt:"diploma maquetacion css"
 })
 
 cardsCursosContenido.push({
     title: "Curso de CSS Grid Básico",
     text: "¡Aprende a crear layouts dinámicos con CSS Grid! Aplica diseños complejos en tu sitio web con pocas líneas de código CSS. Construye grillas para distribuir tus contenedores y elementos HTML ágilmente.",
-    link: "https://platzi.com/cursos/css-grid/"
+    image:"./imgs/png/certificados/diploma-css-grid-1.png",
+    imageAlt:"diploma css grid"
 })
 
 cardsCursosContenido.push({
     title: "Curso Profesional de CSS Grid Layout",
     text: "Aprende CSS Grid Layout para maquetar sitios web complejos sin complicaciones. Analiza tus diseños, divide tu aplicación en cuadrículas y conviértelas en estilos CSS. Integra CSS Grid con Flexbox y el modelo de caja para alinear tus elementos exactamente donde deben estar.",
-    link: "https://platzi.com/cursos/css-grid-layout/"
+    image:"./imgs/png/certificados/diploma-css-grid-layout-1.png",
+    imageAlt:"diploma css grid layout"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Diseño Web con CSS Grid y Flexbox",
     text: "Domina Flexbox y CSS Grid para construir diseños web de nivel superior. Familiarízate con los términos, herramientas, flujos de trabajo y tendencias de diseño más importantes del desarrollo frontend profesional.",
-    link: "https://platzi.com/cursos/flexbox-css-grid/"
-})
-
-cardsCursosContenido.push({
-    title: "Curso de Diseño Web con CSS Grid y Flexbox",
-    text: "Domina Flexbox y CSS Grid para construir diseños web de nivel superior. Familiarízate con los términos, herramientas, flujos de trabajo y tendencias de diseño más importantes del desarrollo frontend profesional.",
-    link: "https://platzi.com/cursos/flexbox-css-grid/"
+    image:"./imgs/png/certificados/diploma-flexbox-css-grid-1.png",
+    imageAlt:"diploma css grid y flexbox"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Bootstrap 4",
     text: "Crear un sitio web responsivo que se vea bien en cualquier dispositivo, desde computadoras de escritorio hasta teléfonos inteligentes y tabletas utilizando Bootstrap",
-    link: "https://platzi.com/cursos/bootstrap/"
-})
-
-cardsCursosContenido.push({
-    title: "Curso de JAVASCRIPT desde CERO - Nivel JUNIOR",
-    text: "10 horas de contenido referente a JavaScript dividido en 6 capitulos aprendiendo cosas como: Introducción de JavaScript, Arrays y Objetos, Bucles e iteraciones, POO, Math, Uso de la consola, DOM, entre otras cosas",
-    link: "https://www.youtube.com/watch?v=z95mZVUcJ-E&t=29282s"
+    image:"./imgs/png/certificados/diploma-bootstrap-1.png",
+    imageAlt:"diploma bootstrap"
 })
 
 cardsCursosContenido.push({
     title: "Curso Básico de JavaScript",
     text: "Conoce los conceptos clave del lenguaje de programación que se está comiendo al mundo. Aprende qué es una variable, una función, un objeto y dónde se guardan esos valores. Descubre qué es Scope y cómo se utilizan los loops. Obtén las herramientas para saber cómo tomar decisiones y validar acciones.",
-    link: "https://platzi.com/cursos/basico-javascript/"
+    image:"./imgs/png/certificados/diploma-basico-javascript-1.png",
+    imageAlt:"diploma basico javascript"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de JavaScript",
     text: "Aprender un lenguaje de programación requiere de práctica constante, con JavaScript puedes crear proyectos increíbles que logren resolver problemas de la vida real por medio de aplicaciones web.",
-    link: "https://platzi.com/cursos/javascript-practico/"
+    image:"./imgs/png/certificados/diploma-javascript-practico-1.png",
+    imageAlt:"diploma practico javascript"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Closures y Scope en JavaScript",
     text: "Comprende a la perfección los diferentes alcances que tienen tus variables cuando son declaradas en JavaScript. En este curso aprenderás los conceptos fundamentales de Scope global y local, cómo declarar variables con const, let y var. Con ejercicios prácticos domina el uso de Closures en tus desarrollos.",
-    link: "https://platzi.com/cursos/javascript-closures-scope/"
+    image:"./imgs/png/certificados/diploma-javascript-closures-scope-1.png",
+    imageAlt:"diploma closures y scope javascript"
 })
 
 cardsCursosContenido.push({
     title: "Curso de ECMAScript: Historia y Versiones de JavaScript",
     text: "JavaScript es el lenguaje más utilizado para desarrollo de aplicaciones web, principalmente en el frontend. Cada año, ECMA International publica una nueva edición de ECMAScript, la especificación a la cual se ajusta JavaScript. Aprende las nuevas características que implementa ECMAScript desde la versión ES6 hasta la versión ES13.",
-    link: "https://platzi.com/cursos/ecmascript-6/"
+    image:"./imgs/png/certificados/diploma-ecmascript-6-1.png",
+    imageAlt:"diploma ecmascript"
 })
 
 
@@ -178,17 +185,41 @@ function renderCardsCursos(array){
         cardText.classList.add('card-text','fs-6','fw-normal','text-bg-white');
         cardText.innerText = courses.text;
 
-        const cardLink = document.createElement('a');
-        cardLink.classList.add('btn','btn-primary','disabled');
-        cardLink.setAttribute('target', '_blank');
-        cardLink.setAttribute('href', courses.link);
-        cardLink.innerText = "accede al curso";
+        const cardLinkModal = document.createElement('button');
+        cardLinkModal.setAttribute('type', 'button');
+        cardLinkModal.setAttribute('data-bs-toggle', 'modal');
+        cardLinkModal.setAttribute('data-bs-target', '#exampleModal');
+        cardLinkModal.classList.add('btn','btn-primary','my-1')
+        cardLinkModal.innerText = "CERTIFICADO";
 
-        cardInfoDiv.append(cardText, cardLink);
+        const modalDialog = document.createElement('div');
+        modalDialog.classList.add('modal-dialog','modal-lg','modal-dialog-centered');
+
+        const modalContent = document.createElement('div');
+        modalContent.classList.add('modal-content');
+
+        const buttonClose = document.createElement('button');
+        buttonClose.classList.add('btn','btn-secondary');
+        buttonClose.setAttribute('type','button');
+        buttonClose.setAttribute('data-bs-dismiss','modal');
+        buttonClose.innerText = "Cerrar";
+
+        const image = document.createElement('img');
+        image.setAttribute('src', courses.image)
+        image.setAttribute('alt', courses.imageAlt)
+
+        modalContent.append(buttonClose, image);
+
+        modalDialog.append(modalContent);
+
+        modalCursos.append(modalDialog);
+
+        cardInfoDiv.append(cardText, cardLinkModal);
 
         cardContainer.append(cardTitle, cardInfoDiv);
 
         cardsCursos.append(cardContainer);
+
 }
 }
 
