@@ -173,7 +173,7 @@ function renderCardsPaginas(array){
 function renderCardsCursos(array){
    for (courses of array) {
         const cardContainer = document.createElement('div');
-        cardContainer.classList.add('card','my-5','col-10','mx-auto');
+        cardContainer.classList.add('card','my-4','col-10','mx-auto');
 
         const cardTitle = document.createElement('div');
         cardTitle.classList.add('card-header','fs-4','text-uppercase','fw-bold','text-bg-white');
