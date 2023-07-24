@@ -15,7 +15,7 @@ cardsPaginasContenido.push({
     imageAlt: 'img pokedex',
     title: 'pokedex api',
     tag: 'HTML, CSS, JavaScript',
-    text: 'Carta Pokemon utilizando la PokeAPI, al cargar la página una función elige un número aleatorio y con ese número trae los valores del pokemon solicitado',
+    text: 'Carta Pokemon utilizando la PokeAPI, al cargar la página una función elige un número aleatorio y con ese número trae los valores del pokemon aleatorio',
     link: 'https://jasr2003.github.io/pokedex-card/',
 })
 cardsPaginasContenido.push({
