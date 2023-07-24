@@ -29,7 +29,7 @@ main {
     color: var(--dark-blue);
 }
 
-.info-personal-2, .ejemplos-paginas, footer{
+.info-personal-2, .ejemplos-paginas, .card-cursos-header, footer{
     color: var(--white);
     background-color: var(--blue);
 }
