@@ -14,14 +14,15 @@ cardsPaginasContenido.push({
     image: './imgs/png/pokedex.jpeg',
     imageAlt: 'img pokedex',
     title: 'pokedex api',
+    tag: 'HTML, CSS, JavaScript',
     text: 'Carta Pokemon utilizando la PokeAPI, al cargar la página una función elige un número aleatorio y con ese número trae los valores del pokemon solicitado',
     link: 'https://jasr2003.github.io/pokedex-card/',
-    position: 1,
 })
 cardsPaginasContenido.push({
     image: './imgs/png/calculadora.jpeg',
     imageAlt: 'img calculadora',
     title: 'Calculadora',
+    tag: 'HTML, CSS, JavaScript',
     text: 'Calculadora hecha a base de un tutorial con las 4 opciones básicas de una calculadora, sumar, restar, multiplicar y dividir con la opción de cambiar el color de la calculadora',
     link: 'https://jasr2003.github.io/calculadora/',
 })
@@ -29,6 +30,7 @@ cardsPaginasContenido.push({
     image: './imgs/png/bootstrapPlatzi.jpeg',
     imageAlt: 'img bootstrap Platzi',
     title: 'PlatziConf Hawaii',
+    tag: 'HTML, CSS, Bootstrap, JavaScript',
     text: 'Página de ejemplo de platzi para aprender como es el uso de Bootstrap a la hora de escribir código',
     link: 'https://jasr2003.github.io/bootstrap-platzi/',
 })
@@ -152,6 +154,9 @@ function renderCardsPaginas(array){
         const cardTitle = document.createElement('h5');
         cardTitle.classList.add('card-title','text-center','fs-4','text-uppercase','fw-bold','text-bg-white','pt-3');
         cardTitle.innerText = pages.title;
+        const cardTag = document.createElement('figcaption');
+        cardTag.classList.add('text-center','fw-normal','text-bg-white','fs-6','pb-3');
+        cardTag.innerText ="se usó " + pages.tag;
         const cardText = document.createElement('p');
         cardText.classList.add('card-text','text-center','fs-6','fw-normal','text-bg-white','pt-3');
         cardText.innerText = pages.text;
@@ -162,7 +167,7 @@ function renderCardsPaginas(array){
         cardLink.setAttribute('href', pages.link);
         cardLink.innerText = "Visitar website";
 
-        cardInfoDiv.append(cardTitle, cardText, cardLink);
+        cardInfoDiv.append(cardTitle,cardTag, cardText, cardLink);
 
         cardPage.append(cardImg, cardInfoDiv);
 
