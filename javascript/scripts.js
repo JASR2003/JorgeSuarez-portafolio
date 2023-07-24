@@ -2,6 +2,7 @@ const cardsPaginas = document.querySelector("#cards-paginas");
 const cardsCursos = document.querySelector("#cards-cursos");
 const modalCursos = document.querySelector("#exampleModal");
 const modalBtn = document.querySelector("#modalBtn");
+const carouselCard = document.querySelector("#carouselCard");
 
 const myModal = document.getElementById('myModal');
 const myInput = document.getElementById('myInput');
@@ -15,6 +16,7 @@ cardsPaginasContenido.push({
     title: 'pokedex api',
     text: 'Carta Pokemon utilizando la PokeAPI, al cargar la página una función elige un número aleatorio y con ese número trae los valores del pokemon solicitado',
     link: 'https://jasr2003.github.io/pokedex-card/',
+    position: 1,
 })
 cardsPaginasContenido.push({
     image: './imgs/png/calculadora.jpeg',
@@ -170,51 +172,45 @@ function renderCardsPaginas(array){
 }
 }
 
-function renderCardsCursos(array){
-   for (courses of array) {
-        const cardContainer = document.createElement('div');
-        cardContainer.classList.add('card','my-4','col-10','mx-auto');
+function renderCardsCursos(array) {
+  for (let i = 0; i < array.length; i++) {
+    const courses = array[i];
+    const cardContainer = document.createElement('div');
+    cardContainer.classList.add('card', 'my-4', 'col-10', 'mx-auto');
 
-        const cardTitle = document.createElement('div');
-        cardTitle.classList.add('card-header','fs-4','text-uppercase','fw-bold','text-bg-white');
-        cardTitle.innerText = courses.title;
+    const cardTitle = document.createElement('div');
+    cardTitle.classList.add('card-header', 'fs-4', 'text-uppercase', 'fw-bold', 'text-bg-white');
+    cardTitle.innerText = courses.title;
 
-        const cardInfoDiv = document.createElement('div');
-        cardInfoDiv.classList.add('card-body');
+    const cardInfoDiv = document.createElement('div');
+    cardInfoDiv.classList.add('card-body');
 
-        const cardText = document.createElement('p');
-        cardText.classList.add('card-text','fs-6','fw-normal','text-bg-white');
-        cardText.innerText = courses.text;
+    const cardText = document.createElement('p');
+    cardText.classList.add('card-text', 'fs-6', 'fw-normal', 'text-bg-white');
+    cardText.innerText = courses.text;
 
-        const modalDialog = document.createElement('div');
-        modalDialog.classList.add('modal-dialog','modal-lg','modal-dialog-centered');
+    const carouselDiv = document.createElement("div");
+    carouselDiv.classList.add("carousel-item");
 
-        const modalContent = document.createElement('div');
-        modalContent.classList.add('modal-content');
+    const image = document.createElement('img');
+    image.classList.add("d-block", "w-100");
+    image.setAttribute('src', courses.image);
+    image.setAttribute('alt', courses.imageAlt);
 
-        const buttonClose = document.createElement('button');
-        buttonClose.classList.add('btn','btn-secondary');
-        buttonClose.setAttribute('type','button');
-        buttonClose.setAttribute('data-bs-dismiss','modal');
-        buttonClose.innerText = "Cerrar";
+    carouselDiv.append(image);
 
-        const image = document.createElement('img');
-        image.setAttribute('src', courses.image)
-        image.setAttribute('alt', courses.imageAlt)
+    if (i === 0) {
+      carouselDiv.classList.add("active");
+    }
 
-        modalContent.append(image, buttonClose);
+    carouselCard.append(carouselDiv);
 
-        modalDialog.append(modalContent);
+    cardInfoDiv.append(cardText);
 
-        modalCursos.append(modalDialog);
+    cardContainer.append(cardTitle, cardInfoDiv);
 
-        cardInfoDiv.append(cardText);
-
-        cardContainer.append(cardTitle, cardInfoDiv);
-
-        cardsCursos.append(cardContainer);
-
-}
+    cardsCursos.append(cardContainer);
+  }
 }
 
 renderCardsPaginas(cardsPaginasContenido);
