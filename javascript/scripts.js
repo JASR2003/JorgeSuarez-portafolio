@@ -15,7 +15,7 @@ cardsPaginasContenido.push({
     imageAlt: 'img pokedex',
     title: 'pokedex api',
     tag: 'HTML, CSS, JavaScript',
-    text: 'Carta Pokemon utilizando la PokeAPI, al cargar la página una función elige un número aleatorio y con ese número trae los valores del pokemon aleatorio',
+    text: 'Presento una carta Pokémon utilizando la PokeAPI. Al cargar la página, una función elige un número aleatorio y muestra los valores del Pokémon correspondiente.',
     link: 'https://jasr2003.github.io/pokedex-card/',
 })
 cardsPaginasContenido.push({
@@ -23,7 +23,7 @@ cardsPaginasContenido.push({
     imageAlt: 'img calculadora',
     title: 'Calculadora',
     tag: 'HTML, CSS, JavaScript',
-    text: 'Calculadora hecha a base de un tutorial con las 4 opciones básicas de una calculadora, sumar, restar, multiplicar y dividir con la opción de cambiar el color de la calculadora',
+    text: 'Desarrollé una calculadora basada en un tutorial, con las cuatro operaciones básicas. Además, agregué la opción de cambiar el color de la misma.',
     link: 'https://jasr2003.github.io/calculadora/',
 })
 cardsPaginasContenido.push({
@@ -31,7 +31,7 @@ cardsPaginasContenido.push({
     imageAlt: 'img bootstrap Platzi',
     title: 'PlatziConf Hawaii',
     tag: 'HTML, CSS, Bootstrap, JavaScript',
-    text: 'Página de ejemplo de platzi para aprender como es el uso de Bootstrap a la hora de escribir código',
+    text: 'Esta página de ejemplo recrea el diseño de PlatziConf, y fue desarrollada para aprender cómo utilizar Bootstrap en la escritura de código.',
     link: 'https://jasr2003.github.io/bootstrap-platzi/',
 })
 
@@ -156,7 +156,7 @@ function renderCardsPaginas(array){
         cardTitle.innerText = pages.title;
         const cardTag = document.createElement('figcaption');
         cardTag.classList.add('text-center','fw-normal','text-bg-white','fs-6','pb-3');
-        cardTag.innerText ="se usó " + pages.tag;
+        cardTag.innerText =`Lenguajes utilizados: ${pages.tag}`;
         const cardText = document.createElement('p');
         cardText.classList.add('card-text','text-center','fs-6','fw-normal','text-bg-white','pt-3');
         cardText.innerText = pages.text;
@@ -181,7 +181,7 @@ function renderCardsCursos(array) {
   for (let i = 0; i < array.length; i++) {
     const courses = array[i];
     const cardContainer = document.createElement('div');
-    cardContainer.classList.add('card', 'my-4', 'col-10', 'mx-auto','border','border-dark-subtle','rounded-4');
+    cardContainer.classList.add('card', 'my-4', 'col-10' , 'col-md-5', 'mx-auto','border','border-dark-subtle','rounded-4');
 
     const cardTitle = document.createElement('div');
     cardTitle.classList.add('fs-4', 'text-uppercase', 'fw-bold','card-cursos-header', 'p-3','rounded-top-4');
@@ -191,8 +191,8 @@ function renderCardsCursos(array) {
     cardInfoDiv.classList.add('card-body');
 
     const cardText = document.createElement('p');
-    cardText.classList.add('card-text', 'fs-6', 'fw-normal', 'text-bg-white');
-    cardText.innerText = courses.text;
+    cardText.classList.add('card-text', 'fs-5', 'fw-normal', 'text-bg-white');
+    cardText.innerText = courses.title;
 
     const carouselDiv = document.createElement("div");
     carouselDiv.classList.add("carousel-item");
@@ -212,7 +212,7 @@ function renderCardsCursos(array) {
 
     cardInfoDiv.append(cardText);
 
-    cardContainer.append(cardTitle, cardInfoDiv);
+    cardContainer.append(cardInfoDiv);
 
     cardsCursos.append(cardContainer);
   }
