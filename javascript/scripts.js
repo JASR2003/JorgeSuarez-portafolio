@@ -181,7 +181,7 @@ function renderCardsCursos(array) {
   for (let i = 0; i < array.length; i++) {
     const courses = array[i];
     const cardContainer = document.createElement('div');
-    cardContainer.classList.add('card', 'my-4', 'col-10' , 'col-md-5', 'mx-auto','border','border-dark-subtle','rounded-4');
+    cardContainer.classList.add('card', 'my-2', 'col-10' , 'col-md-5', 'mx-auto','border','border-dark-subtle','rounded-4');
 
     const cardTitle = document.createElement('div');
     cardTitle.classList.add('fs-4', 'text-uppercase', 'fw-bold','card-cursos-header', 'p-3','rounded-top-4');
