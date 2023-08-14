@@ -4,11 +4,33 @@ const modalCursos = document.querySelector("#exampleModal");
 const modalBtn = document.querySelector("#modalBtn");
 const carouselCard = document.querySelector("#carouselCard");
 
+const seeMoreBtn = document.getElementById("btn-courses");
+const seeMoreBtnClose = document.getElementById("btn-courses-close");
 const myModal = document.getElementById('myModal');
 const myInput = document.getElementById('myInput');
 
 const cardsPaginasContenido = [];
 const cardsCursosContenido = [];
+
+let maxCards = 6;
+
+seeMoreBtn.innerText = "Ver más";
+seeMoreBtnClose.innerText = "Ver menos";
+
+seeMoreBtn.addEventListener('click', () => {
+  seeMoreBtn.classList.add("d-none");
+  seeMoreBtnClose.classList.remove("d-none");
+  maxCards = cardsCursosContenido.length;
+  cardsCursos.innerHTML = "";
+  renderCardsCursos(cardsCursosContenido);
+})
+seeMoreBtnClose.addEventListener('click', () => {
+  seeMoreBtnClose.classList.add("d-none");
+  seeMoreBtn.classList.remove("d-none");
+  maxCards = 6;
+  cardsCursos.innerHTML = "";
+  renderCardsCursos(cardsCursosContenido);
+})
 
 cardsPaginasContenido.push({
     image: './imgs/png/pokedex.jpeg',
@@ -191,6 +213,10 @@ function renderCardsCursos(array) {
 
     if (i === 0) {
       carouselDiv.classList.add("active");
+    }
+
+    if (i >= maxCards) {
+      cardContainer.classList.add('d-none')
     }
 
     carouselCard.append(carouselDiv);
