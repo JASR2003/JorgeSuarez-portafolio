@@ -18,7 +18,7 @@
 }
 
 .logo-img {
-    width: 80px
+    height: 70px;
 }
 
 main {
@@ -32,10 +32,6 @@ main {
 .info-personal-2, .ejemplos-paginas, .card-cursos-header, footer{
     color: var(--white);
     background-color: var(--blue);
-}
-
-.img-change{
-    height: 200px !important;
 }
 
 .icon-footer{
@@ -70,4 +66,10 @@ main {
     display: grid;
     place-items: center;
     font-size: 30px;
+}
+
+@media (max-width: 991px) {
+    .logo-img {
+        height: 50px;
+    }
 }
