@@ -3,6 +3,7 @@ const cardsCursos = document.querySelector("#cards-cursos");
 const modalCursos = document.querySelector("#exampleModal");
 const modalBtn = document.querySelector("#modalBtn");
 const carouselCard = document.querySelector("#carouselCard");
+const header = document.querySelector("#header");
 
 const seeMoreBtn = document.getElementById("btn-courses");
 const seeMoreBtnClose = document.getElementById("btn-courses-close");
@@ -243,7 +244,7 @@ $(document).ready(function() {
 
     // Realiza el desplazamiento suave al destino
     $("html, body").animate({
-      scrollTop: target.offset().top
+      scrollTop: target.offset().top - 90
     }, 500); // Cambia el valor "1000" para ajustar la duración de la transición
   });
 });
