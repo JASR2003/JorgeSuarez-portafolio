@@ -233,20 +233,12 @@ function renderCardsCursos(array) {
 renderCardsPaginas(cardsPaginasContenido);
 renderCardsCursos(cardsCursosContenido);
 
-$(document).ready(function() {
-  // Agrega un desplazamiento suave a los enlaces internos
-  $(".smooth-scroll").on("click", function(event) {
-    // Evita el comportamiento predeterminado del enlace
-    event.preventDefault();
-
-    // Obtiene el destino del enlace
-    var target = $(this.hash);
-
-    // Realiza el desplazamiento suave al destino
-    $("html, body").animate({
-      scrollTop: target.offset().top - 90
-    }, 500); // Cambia el valor "1000" para ajustar la duración de la transición
-  });
+$(".smooth-scroll").on("click", function(event) {
+  event.preventDefault();
+  var target = $(this).attr("href");
+  $("html, body").animate({
+    scrollTop: $(target).offset().top
+  }, 300);
 });
 
 let calcScrollValue = () => {
