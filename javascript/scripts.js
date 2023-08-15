@@ -238,7 +238,7 @@ $(".smooth-scroll").on("click", function(event) {
   var target = $(this).attr("href");
   $("html, body").animate({
     scrollTop: $(target).offset().top - 90
-  }, 300);
+  }, 200);
 });
 
 let calcScrollValue = () => {
