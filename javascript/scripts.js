@@ -50,6 +50,14 @@ cardsPaginasContenido.push({
     link: 'https://jasr2003.github.io/calculadora/',
 })
 cardsPaginasContenido.push({
+    image: './imgs/png/taxiGame.jpeg',
+    imageAlt: 'img taxi game',
+    title: 'Taxi Game',
+    tag: 'HTML, CSS, JavaScript',
+    text: 'juego de llevar el vehiculo del punto A al punto B, se hizo para aprender el uso de Canva JavaScript',
+    link: 'https://jasr2003.github.io/taxiGame/',
+})
+cardsPaginasContenido.push({
     image: './imgs/png/bootstrapPlatzi.jpeg',
     imageAlt: 'img bootstrap Platzi',
     title: 'PlatziConf Hawaii',
