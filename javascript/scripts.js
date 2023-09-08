@@ -149,6 +149,11 @@ cardsCursosContenido.push({
     image:"./imgs/png/certificados/diploma-ecmascript-6-1.png",
     imageAlt:"diploma ecmascript"
 })
+cardsCursosContenido.push({
+    title: "Taller Práctico de JavaScript: Creando videojuegos con Canvas y JavaScript",
+    image:"./imgs/png/certificados/diploma-javascript-practico-videojuegos.png",
+    imageAlt:"diploma videojuego"
+})
 
 
 function renderCardsPaginas(array){
