@@ -54,7 +54,7 @@ cardsPaginasContenido.push({
     imageAlt: 'img taxi game',
     title: 'Taxi Game',
     tag: 'HTML, CSS, JavaScript',
-    text: 'juego de llevar el vehiculo del punto A al punto B, se hizo para aprender el uso de Canva JavaScript',
+    text: 'Hice un juego en el que debes llevar un vehículo del punto A al punto B en honor a una de mis páginas favoritas, Friv.com. El objetivo era aprender a utilizar Canva JavaScript.',
     link: 'https://jasr2003.github.io/taxiGame/',
 })
 cardsPaginasContenido.push({
