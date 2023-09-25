@@ -39,8 +39,29 @@ main {
     transition: 300ms;
 }
 
+.botones-cursos button{
+    transition: 300ms;
+}
+
+.botones-cursos button:hover{
+    transform: scale(1.1);
+}
+.botones-cursos button:active{
+    transform: scale(0.9);
+}
+
 .icon-footer:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
+}
+.icon-footer:active{
+    transform: scale(0.8);
+}
+
+#progress:hover{
+    transform: scale(1.2);
+}
+#progress:active{
+    transform: scale(0.9);
 }
 
 #progress {
@@ -55,6 +76,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     z-index: 999999999;
+    transition: 300ms;
 }
 
 #progress-value {
