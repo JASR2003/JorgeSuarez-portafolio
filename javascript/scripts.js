@@ -154,6 +154,11 @@ cardsCursosContenido.push({
     image:"./imgs/png/certificados/diploma-javascript-practico-videojuegos.png",
     imageAlt:"diploma videojuego"
 })
+cardsCursosContenido.push({
+    title: "Curso de Transformaciones y Transiciones en CSS",
+    image:"./imgs/png/certificados/diploma-transformaciones-transiciones-css.png",
+    imageAlt:"diploma Transformaciones y Transiciones"
+})
 
 
 function renderCardsPaginas(array){
