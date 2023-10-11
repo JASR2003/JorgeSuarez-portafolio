@@ -29,13 +29,13 @@ main {
     color: var(--dark-blue);
 }
 
-.info-personal-2, .ejemplos-paginas, .card-cursos-header, footer{
+.inicio-2, .ejemplos-paginas, .card-cursos-header, footer{
     color: var(--white);
     background-color: var(--blue);
 }
 
 .icon-footer{
-    width: 75%;
+    width: 60%;
     transition: 300ms;
 }
 

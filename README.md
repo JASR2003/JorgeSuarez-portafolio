@@ -1,2 +1,2 @@
-# portafolio-personal
-Portafolio Personal, Página web donde muestro un poco sobre mí
+# proyectos-personal
+proyectos Personal, Página web donde muestro un poco sobre mí
