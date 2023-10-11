@@ -68,96 +68,96 @@ cardsPaginasContenido.push({
 
 cardsCursosContenido.push({
     title: "Curso Definitivo de HTML y CSS",
-    image:"./imgs/png/certificados/diploma-html-css-1.png",
-    imageAlt:"diploma html css"
+    // image:"./imgs/png/certificados/diploma-html-css-1.png",
+    // imageAlt:"diploma html css"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de HTML y CSS",
-    image:"./imgs/png/certificados/diploma-html-practico-1.png",
-    imageAlt:"diploma html css practico"
+    // image:"./imgs/png/certificados/diploma-html-practico-1.png",
+    // imageAlt:"diploma html css practico"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Frontend Developer",
-    image:"./imgs/png/certificados/diploma-frontend-developer-1.png",
-    imageAlt:"diploma frontend developer"
+    // image:"./imgs/png/certificados/diploma-frontend-developer-1.png",
+    // imageAlt:"diploma frontend developer"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de Frontend Developer",
-    image:"./imgs/png/certificados/diploma-frontend-developer-practico-1.png",
-    imageAlt:"diploma frontend developer curso practico"
+    // image:"./imgs/png/certificados/diploma-frontend-developer-practico-1.png",
+    // imageAlt:"diploma frontend developer curso practico"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Responsive Design: Maquetación Mobile First",
-    image:"./imgs/png/certificados/diploma-mobile-first-1.png",
-    imageAlt:"diploma mobile first"
+    // image:"./imgs/png/certificados/diploma-mobile-first-1.png",
+    // imageAlt:"diploma mobile first"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de Maquetación en CSS",
-    image:"./imgs/png/certificados/diploma-practico-css-1.png",
-    imageAlt:"diploma maquetacion css"
+    // image:"./imgs/png/certificados/diploma-practico-css-1.png",
+    // imageAlt:"diploma maquetacion css"
 })
 
 cardsCursosContenido.push({
     title: "Curso de CSS Grid Básico",
-    image:"./imgs/png/certificados/diploma-css-grid-1.png",
-    imageAlt:"diploma css grid"
+    // image:"./imgs/png/certificados/diploma-css-grid-1.png",
+    // imageAlt:"diploma css grid"
 })
 
 cardsCursosContenido.push({
     title: "Curso Profesional de CSS Grid Layout",
-    image:"./imgs/png/certificados/diploma-css-grid-layout-1.png",
-    imageAlt:"diploma css grid layout"
+    // image:"./imgs/png/certificados/diploma-css-grid-layout-1.png",
+    // imageAlt:"diploma css grid layout"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Diseño Web con CSS Grid y Flexbox",
-    image:"./imgs/png/certificados/diploma-flexbox-css-grid-1.png",
-    imageAlt:"diploma css grid y flexbox"
+    // image:"./imgs/png/certificados/diploma-flexbox-css-grid-1.png",
+    // imageAlt:"diploma css grid y flexbox"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Bootstrap 4",
-    image:"./imgs/png/certificados/diploma-bootstrap-1.png",
-    imageAlt:"diploma bootstrap"
+    // image:"./imgs/png/certificados/diploma-bootstrap-1.png",
+    // imageAlt:"diploma bootstrap"
 })
 
 cardsCursosContenido.push({
     title: "Curso Básico de JavaScript",
-    image:"./imgs/png/certificados/diploma-basico-javascript-1.png",
-    imageAlt:"diploma basico javascript"
+    // image:"./imgs/png/certificados/diploma-basico-javascript-1.png",
+    // imageAlt:"diploma basico javascript"
 })
 
 cardsCursosContenido.push({
     title: "Curso Práctico de JavaScript",
-    image:"./imgs/png/certificados/diploma-javascript-practico-1.png",
-    imageAlt:"diploma practico javascript"
+    // image:"./imgs/png/certificados/diploma-javascript-practico-1.png",
+    // imageAlt:"diploma practico javascript"
 })
 
 cardsCursosContenido.push({
     title: "Curso de Closures y Scope en JavaScript",
-    image:"./imgs/png/certificados/diploma-javascript-closures-scope-1.png",
-    imageAlt:"diploma closures y scope javascript"
+    // image:"./imgs/png/certificados/diploma-javascript-closures-scope-1.png",
+    // imageAlt:"diploma closures y scope javascript"
 })
 
 cardsCursosContenido.push({
     title: "Curso de ECMAScript: Historia y Versiones de JavaScript",
-    image:"./imgs/png/certificados/diploma-ecmascript-6-1.png",
-    imageAlt:"diploma ecmascript"
+    // image:"./imgs/png/certificados/diploma-ecmascript-6-1.png",
+    // imageAlt:"diploma ecmascript"
 })
 cardsCursosContenido.push({
     title: "Taller Práctico de JavaScript: Creando videojuegos con Canvas y JavaScript",
-    image:"./imgs/png/certificados/diploma-javascript-practico-videojuegos.png",
-    imageAlt:"diploma videojuego"
+    // image:"./imgs/png/certificados/diploma-javascript-practico-videojuegos.png",
+    // imageAlt:"diploma videojuego"
 })
 cardsCursosContenido.push({
     title: "Curso de Transformaciones y Transiciones en CSS",
-    image:"./imgs/png/certificados/diploma-transformaciones-transiciones-css.png",
-    imageAlt:"diploma Transformaciones y Transiciones"
+    // image:"./imgs/png/certificados/diploma-transformaciones-transiciones-css.png",
+    // imageAlt:"diploma Transformaciones y Transiciones"
 })
 
 
@@ -220,25 +220,9 @@ function renderCardsCursos(array) {
     cardText.classList.add('card-text', 'fs-5', 'fw-normal', 'text-bg-white');
     cardText.innerText = courses.title;
 
-    const carouselDiv = document.createElement("div");
-    carouselDiv.classList.add("carousel-item");
-
-    const image = document.createElement('img');
-    image.classList.add("d-block", "w-100");
-    image.setAttribute('src', courses.image);
-    image.setAttribute('alt', courses.imageAlt);
-
-    carouselDiv.append(image);
-
-    if (i === 0) {
-      carouselDiv.classList.add("active");
-    }
-
     if (i >= maxCards) {
       cardContainer.classList.add('d-none')
     }
-
-    carouselCard.append(carouselDiv);
 
     cardInfoDiv.append(cardText);
 
