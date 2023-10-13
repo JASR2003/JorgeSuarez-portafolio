@@ -159,6 +159,11 @@ cardsCursosContenido.push({
     // image:"./imgs/png/certificados/diploma-transformaciones-transiciones-css.png",
     // imageAlt:"diploma Transformaciones y Transiciones"
 })
+cardsCursosContenido.push({
+    title: "Curso de Diseño para Developers",
+    // image:"./imgs/png/certificados/diploma-diseno-programadores.png",
+    // imageAlt:"diploma diseño programadores"
+})
 
 
 function renderCardsPaginas(array){
