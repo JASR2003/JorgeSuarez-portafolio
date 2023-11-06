@@ -1,8 +1,9 @@
 :root{
-    --dark-blue: #13293D;
+    --dark-blue-lm: #13293D;
+    --dark-blue-dm: #17202C;
+    --dark-blue-2-dm: #273340;
     --blue: #006494;
-    --light-blue: #2970CA;
-    --white: #E8F1F2;
+    --white: #ecf2f3;
     --black: #2F2D2E;
     --light-font: 100;
     --medium-font: 400;
@@ -13,20 +14,24 @@
     font-family: 'Lexend Deca', sans-serif;
 }
 
-#header {
-    color: var(--dark-blue);
+.header-lm , .inicio-lm {
+    color: var(--dark-blue-lm);
+    background-color: var(--white);
 }
 
 .logo-img {
     height: 70px;
 }
 
-main {
-    margin-top: 100px;
+.yo{
+    max-height: 300px;
+    width: auto;
+    object-fit: contain;
 }
 
-.text-bg-white{
-    color: var(--dark-blue);
+main {
+    padding-top: 80px;
+    background-color: var(--white);
 }
 
 .inicio-2, .ejemplos-paginas, .card-cursos-header, footer{

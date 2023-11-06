@@ -183,13 +183,13 @@ function renderCardsPaginas(array){
         cardInfoDiv.classList.add('card-body','pb-4','text-center', 'd-flex', 'flex-column');
 
         const cardTitle = document.createElement('h5');
-        cardTitle.classList.add('card-title','text-center','fs-4','text-uppercase','fw-bold','text-bg-white','pt-3');
+        cardTitle.classList.add('card-title','text-center','fs-4','text-uppercase','fw-bold','text-bg-white-lm','pt-3');
         cardTitle.innerText = pages.title;
         const cardTag = document.createElement('figcaption');
-        cardTag.classList.add('text-center','fw-normal','text-bg-white','fs-6','pb-3');
+        cardTag.classList.add('text-center','fw-normal','text-bg-white-lm','fs-6','pb-3');
         cardTag.innerText =`Lenguajes utilizados: ${pages.tag}`;
         const cardText = document.createElement('p');
-        cardText.classList.add('card-text','text-center','fs-6','fw-normal','text-bg-white','pt-3');
+        cardText.classList.add('card-text','text-center','fs-6','fw-normal','text-bg-white-lm','pt-3');
         cardText.innerText = pages.text;
 
         const cardLink = document.createElement('a');
@@ -222,7 +222,7 @@ function renderCardsCursos(array) {
     cardInfoDiv.classList.add('card-body');
 
     const cardText = document.createElement('p');
-    cardText.classList.add('card-text', 'fs-5', 'fw-normal', 'text-bg-white');
+    cardText.classList.add('card-text', 'fs-5', 'fw-normal', 'text-bg-white-lm');
     cardText.innerText = courses.title;
 
     if (i >= maxCards) {
