@@ -215,7 +215,7 @@ function renderCardsCursos(array) {
     cardContainer.classList.add('card', 'my-3', 'col-10' , 'col-md-5', 'mx-auto','border','border-dark-subtle','rounded-4');
 
     const cardTitle = document.createElement('div');
-    cardTitle.classList.add('fs-4', 'text-uppercase', 'fw-bold','card-cursos-header', 'p-3','rounded-top-4');
+    cardTitle.classList.add('fs-4', 'text-uppercase', 'fw-bold','card-cursos-header-lm', 'p-3','rounded-top-4');
     cardTitle.innerText = courses.title;
 
     const cardInfoDiv = document.createElement('div');

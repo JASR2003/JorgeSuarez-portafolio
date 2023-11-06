@@ -14,11 +14,6 @@
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.header-lm , .inicio-lm {
-    color: var(--dark-blue-lm);
-    background-color: var(--white);
-}
-
 .logo-img {
     height: 70px;
 }
@@ -34,7 +29,12 @@ main {
     background-color: var(--white);
 }
 
-.inicio-2, .ejemplos-paginas, .card-cursos-header, footer{
+.header-lm, .inicio-lm {
+    color: var(--dark-blue-lm);
+    background-color: var(--white);
+}
+
+.ejemplos-paginas-lm, .card-cursos-header-lm, footer{
     color: var(--white);
     background-color: var(--blue);
 }
