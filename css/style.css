@@ -99,4 +99,12 @@ main {
     .logo-img {
         height: 50px;
     }
+    .yo{
+        max-height: 270px;
+    }
+}
+@media (max-width: 600px) {
+    .yo{
+        max-height: 230px;
+    }
 }
