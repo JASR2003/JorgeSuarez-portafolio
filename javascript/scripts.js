@@ -63,7 +63,7 @@ cardsPaginasContenido.push({
     title: 'PlatziConf Hawaii',
     tag: 'HTML, CSS, Bootstrap, JavaScript',
     text: 'Esta página de ejemplo recrea el diseño de PlatziConf, y fue desarrollada para aprender cómo utilizar Bootstrap en la escritura de código.',
-    link: 'https://jasr2003.github.io/bootstrap-platzi/',
+    link: 'https://jorgesuarez-bootstrap.netlify.app/',
 })
 
 cardsCursosContenido.push({
