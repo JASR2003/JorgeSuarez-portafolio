@@ -71,7 +71,7 @@ cardsPaginasContenido.push({
     title: 'Piedra,Papel,Tijera',
     tag: 'HTML, CSS, JavaScript',
     text: 'El clásico Piedra Papel o Tijera de toda la vida, Intenta ganarle a la máquina, es al mejor de 5',
-    link: 'https://app.netlify.com/sites/jorgesuarez-piedra-papel-tijera/',
+  link: 'https://jorgesuarez-piedra-papel-tijera.netlify.app/',
 })
 
 cardsCursosContenido.push({
