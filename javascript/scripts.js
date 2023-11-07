@@ -65,6 +65,14 @@ cardsPaginasContenido.push({
     text: 'Esta página de ejemplo recrea el diseño de PlatziConf, y fue desarrollada para aprender cómo utilizar Bootstrap en la escritura de código.',
     link: 'https://jorgesuarez-bootstrap.netlify.app/',
 })
+cardsPaginasContenido.push({
+    image: './imgs/png/piedra-papel-tijera.jpeg',
+    imageAlt: 'img Piedra Papel Tijera',
+    title: 'Piedra,Papel,Tijera',
+    tag: 'HTML, CSS, JavaScript',
+    text: 'El clásico Piedra Papel o Tijera de toda la vida, Intenta ganarle a la máquina, es al mejor de 5',
+    link: 'https://app.netlify.com/sites/jorgesuarez-piedra-papel-tijera/',
+})
 
 cardsCursosContenido.push({
     title: "Curso Definitivo de HTML y CSS",
