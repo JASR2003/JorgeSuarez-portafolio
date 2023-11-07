@@ -47,7 +47,7 @@ cardsPaginasContenido.push({
     title: 'Calculadora',
     tag: 'HTML, CSS, JavaScript',
     text: 'Desarrollé una calculadora basada en un tutorial, con las cuatro operaciones básicas. Además, agregué la opción de cambiar el color de la misma.',
-    link: 'https://jasr2003.github.io/calculadora/',
+    link: 'https://jorgesuarez-calculadora.netlify.app/',
 })
 cardsPaginasContenido.push({
     image: './imgs/png/taxiGame.jpeg',
