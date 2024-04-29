@@ -18,6 +18,11 @@
     height: 70px;
 }
 
+.yo-container{
+    display: flex;
+    justify-content: center;
+}
+
 .yo{
     max-height: 300px;
     width: auto;
