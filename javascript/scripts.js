@@ -139,6 +139,11 @@ cardsCursosContenido.push({
     // image:"./imgs/png/certificados/diploma-basico-javascript-1.png",
     // imageAlt:"diploma basico javascript"
 })
+cardsCursosContenido.push({
+    title: "Fundamentos de JavaScript",
+    // image:"./imgs/png/certificados/diploma-basico-javascript-1.png",
+    // imageAlt:"diploma basico javascript"
+})
 
 cardsCursosContenido.push({
     title: "Curso Práctico de JavaScript",
