@@ -133,6 +133,11 @@ cardsCursosContenido.push({
     // image:"./imgs/png/certificados/diploma-bootstrap-1.png",
     // imageAlt:"diploma bootstrap"
 })
+cardsCursosContenido.push({
+    title: "Curso de TailwindCSS",
+    // image:"./imgs/png/certificados/diploma-bootstrap-1.png",
+    // imageAlt:"diploma bootstrap"
+})
 
 cardsCursosContenido.push({
     title: "Curso Básico de JavaScript",
