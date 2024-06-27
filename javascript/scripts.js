@@ -187,6 +187,11 @@ cardsCursosContenido.push({
     // image:"./imgs/png/certificados/diploma-diseno-programadores.png",
     // imageAlt:"diploma diseño programadores"
 })
+cardsCursosContenido.push({
+    title: "Creación de Páginas Web con Wordpress y No-code",
+    // image:"./imgs/png/certificados/diploma-diseno-programadores.png",
+    // imageAlt:"diploma diseño programadores"
+})
 
 
 function renderCardsPaginas(array){
